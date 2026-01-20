@@ -1,0 +1,79 @@
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\appsettings.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\StudentApi.staticwebassets.endpoints.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\StudentApi.exe
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\StudentApi.deps.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\StudentApi.runtimeconfig.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\StudentApi.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\StudentApi.pdb
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.csproj.AssemblyReference.cache
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.AssemblyInfoInputs.cache
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.AssemblyInfo.cs
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.csproj.CoreCompileInputs.cache
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\scopedcss\bundle\StudentApi.styles.css
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.csproj.Up2Date
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\refint\StudentApi.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.pdb
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.genruntimeconfig.cache
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\01 StudentAPIServer v7 - Update Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\ref\StudentApi.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\appsettings.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\StudentApi.staticwebassets.endpoints.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\StudentApi.exe
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\StudentApi.deps.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\StudentApi.runtimeconfig.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\StudentApi.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\StudentApi.pdb
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.csproj.AssemblyReference.cache
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.AssemblyInfoInputs.cache
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.AssemblyInfo.cs
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.csproj.CoreCompileInputs.cache
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\scopedcss\bundle\StudentApi.styles.css
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.csproj.Up2Date
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\refint\StudentApi.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.pdb
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\StudentApi.genruntimeconfig.cache
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\obj\Debug\net10.0\ref\StudentApi.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\BCrypt.Net-Next.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\mraba\Downloads\RoadMap\Mohammed-Abu_Hadhoud\API\API-Part2\0.1-StudentAPIServer-v7--Update-Student\MyFirstRestAPI_Porject\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
