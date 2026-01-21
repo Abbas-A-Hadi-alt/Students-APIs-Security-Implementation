@@ -34,7 +34,7 @@ public sealed class AuthService(IConfiguration config) : IAuthService
 	public string TokenIssue(Student student)
 	{
 		var key = new SymmetricSecurityKey(
-			Encoding.UTF8.GetBytes(config["JWT_SECRET_KEY"] 
+			Encoding.UTF8.GetBytes(config["JwtSigningKey"] 
 			    ?? throw new KeyNotFoundException("'JWT_SECRET_KEY' key is not found in Environment Variables.")));
 
 		var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);

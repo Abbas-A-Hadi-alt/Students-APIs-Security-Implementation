@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mraba\\Downloads\\RoadMap\\Mohammed-Abu_Hadhoud\\API\\API-Part2\\0.1-StudentAPIServer-v7--Update-Student\\MyFirstRestAPI_Porject\\StudentApi.csproj": {}
+    "C:\\Users\\mraba\\Downloads\\RoadMap\\Mohammed-Abu_Hadhoud\\API\\API-Part2\\0.1-StudentAPIServer-v7\\Student-APIs-Security-Implementation\\MyFirstRestAPI_Porject\\StudentApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mraba\\Downloads\\RoadMap\\Mohammed-Abu_Hadhoud\\API\\API-Part2\\0.1-StudentAPIServer-v7--Update-Student\\MyFirstRestAPI_Porject\\StudentApi.csproj": {
+    "C:\\Users\\mraba\\Downloads\\RoadMap\\Mohammed-Abu_Hadhoud\\API\\API-Part2\\0.1-StudentAPIServer-v7\\Student-APIs-Security-Implementation\\MyFirstRestAPI_Porject\\StudentApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mraba\\Downloads\\RoadMap\\Mohammed-Abu_Hadhoud\\API\\API-Part2\\0.1-StudentAPIServer-v7--Update-Student\\MyFirstRestAPI_Porject\\StudentApi.csproj",
+        "projectUniqueName": "C:\\Users\\mraba\\Downloads\\RoadMap\\Mohammed-Abu_Hadhoud\\API\\API-Part2\\0.1-StudentAPIServer-v7\\Student-APIs-Security-Implementation\\MyFirstRestAPI_Porject\\StudentApi.csproj",
         "projectName": "StudentApi",
-        "projectPath": "C:\\Users\\mraba\\Downloads\\RoadMap\\Mohammed-Abu_Hadhoud\\API\\API-Part2\\0.1-StudentAPIServer-v7--Update-Student\\MyFirstRestAPI_Porject\\StudentApi.csproj",
+        "projectPath": "C:\\Users\\mraba\\Downloads\\RoadMap\\Mohammed-Abu_Hadhoud\\API\\API-Part2\\0.1-StudentAPIServer-v7\\Student-APIs-Security-Implementation\\MyFirstRestAPI_Porject\\StudentApi.csproj",
         "packagesPath": "C:\\Users\\mraba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mraba\\Downloads\\RoadMap\\Mohammed-Abu_Hadhoud\\API\\API-Part2\\0.1-StudentAPIServer-v7--Update-Student\\MyFirstRestAPI_Porject\\obj\\",
+        "outputPath": "C:\\Users\\mraba\\Downloads\\RoadMap\\Mohammed-Abu_Hadhoud\\API\\API-Part2\\0.1-StudentAPIServer-v7\\Student-APIs-Security-Implementation\\MyFirstRestAPI_Porject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mraba\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -44,6 +44,14 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
+            "Azure.Extensions.AspNetCore.Configuration.Secrets": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.18.0-beta.2, )"
+            },
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.0.3, )"

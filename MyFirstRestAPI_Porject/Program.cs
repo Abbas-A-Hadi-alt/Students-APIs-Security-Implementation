@@ -1,4 +1,5 @@
 using System.Text;
+using Azure.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -13,6 +14,14 @@ builder.WebHost.UseKestrel(options =>
 	options.AddServerHeader = false;
 });
 
+var keyVaultUrl =  builder.Configuration["KeyVault:Url"];
+if (!string.IsNullOrEmpty(keyVaultUrl))
+{
+	builder.Configuration.AddAzureKeyVault(
+		new Uri(keyVaultUrl),
+		new DefaultAzureCredential());
+}
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 	.AddJwtBearer(options =>
 	{
@@ -25,7 +34,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 			ValidIssuer = builder.Configuration["StudentApi.Issuer"],
 			ValidAudience = builder.Configuration["StudentApi.Audience"],
 			IssuerSigningKey = new SymmetricSecurityKey(
-				Encoding.UTF8.GetBytes(builder.Configuration["JWT_SECRET_KEY"]
+				Encoding.UTF8.GetBytes(builder.Configuration["JwtSigningKey"]
 					?? throw new KeyNotFoundException("'JWT_SECRET_KEY' key is not found in Environment Variables.")))
 		};
 	});
@@ -59,7 +68,7 @@ builder.Services.AddSwaggerGen(options =>
 					Id = "Bearer"
 				}
 			},
-			new string[] { }
+			[]
 		}
 	});
 });
