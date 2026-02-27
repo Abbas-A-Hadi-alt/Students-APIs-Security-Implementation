@@ -1,8 +1,8 @@
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using StudentApi.DTOs.Auth;
 using StudentApi.Model;
 using StudentApi.Services;
+using LoginRequest = StudentApi.DTOs.Auth.LoginRequest;
 
 namespace StudentApi.Controllers;
 
