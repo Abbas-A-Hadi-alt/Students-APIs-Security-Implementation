@@ -1,4 +1,6 @@
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using StudentApi.DTOs.Auth;
 using StudentApi.Model;
 using StudentApi.Services;
 
@@ -8,7 +10,7 @@ namespace StudentApi.Controllers;
 [Route("api/Auth")]
 public sealed class AuthController(IAuthService authService) : ControllerBase
 {
-    [HttpPost("Login")]
+    [HttpPost("login")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -20,8 +22,38 @@ public sealed class AuthController(IAuthService authService) : ControllerBase
         {
             (null, ErrorTypes.Failure) => BadRequest(error.Description),
             (null, ErrorTypes.NotFound) or (_, ErrorTypes.Unauthorized) => Unauthorized(error.Description),
-            (null, ErrorTypes.Problem) => Problem(error.Description),
             _ => Ok(token)
+        };
+    }
+
+    [HttpPost("refresh")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    public IActionResult Refresh(RefreshRequest refreshRequest)
+    {
+        var (token, error) = authService.Refresh(refreshRequest);
+
+        return (token, error.Type) switch
+        {
+            (null, ErrorTypes.Failure) => BadRequest(error.Description),
+            (null, ErrorTypes.NotFound) or (_, ErrorTypes.Unauthorized) => Unauthorized(error.Description),
+            _ => Ok(token)
+        };
+    }
+
+    [HttpPost("logout")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    public IActionResult Logout(LogoutRequest logoutRequest)
+    {
+        var (student, error) = authService.Logout(logoutRequest);
+
+        return (student, error.Type) switch
+        {
+            (null, _) => Ok(),
+            _ => Ok("Logged out successfully")
         };
     }
 }

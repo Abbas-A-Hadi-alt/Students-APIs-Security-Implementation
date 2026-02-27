@@ -3,7 +3,9 @@ using System.Text;
 using StudentApi.Model;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Cryptography;
 using StudentApi.DataSimulation;
+using StudentApi.DTOs.Auth;
 
 namespace StudentApi.Services;
 
@@ -11,24 +13,100 @@ public sealed class AuthService(IConfiguration config) : IAuthService
 {
 	public (TokenResponse? Token, Error Error) Login(LoginRequest loginRequest)
 	{
-		Student? student = StudentDataSimulation.StudentsList.FirstOrDefault(x => x.Email == loginRequest.Email);
+		Student? student = StudentDataSimulation.StudentsList
+			.FirstOrDefault(x => x.Email == loginRequest.Email);
 
 		if (student is null)
 		{
-			return (Token: null, Error.NotFound("Auth.NotFound", "Invalid Credentials"));
+			return (null, Error.NotFound("Auth.NotFound", "Invalid Credentials"));
 		}
 
 		bool isValidPassword = BCrypt.Net.BCrypt.Verify(loginRequest.Password, student.PasswordHash);
 
 		if (!isValidPassword)
 		{
-			return (Token: null, Error.Unauthorized("Auth.Unauthorized", "Invalid Credentials"));
+			return (null, Error.Unauthorized("Auth.Unauthorized", "Invalid Credentials"));
 		}
 
 		string jwt = TokenIssue(student);
-		TokenResponse token = new(jwt);
+		string refreshToken = RefreshTokenIssue();
+		
+		student.RefreshTokenHash = BCrypt.Net.BCrypt.HashPassword(refreshToken);
+		student.RefreshTokenExpiresAt = DateTime.UtcNow.AddDays(7);
+		student.RefreshTokenRevokedAt = null;
+		
+		TokenResponse token = new(AccessToken: jwt, RefreshToken: refreshToken);
 
-		return (Token: token, Error.None);
+		return (token, Error.None);
+	}
+
+	public (TokenResponse? Token, Error Error) Refresh(RefreshRequest refreshRequest)
+	{
+		Student? student = StudentDataSimulation.StudentsList
+			.FirstOrDefault(x => x.Email == refreshRequest.Email);
+
+		if (student is null)
+		{
+			return (null, Error.NotFound("Auth.NotFound", "Invalid Credentials"));
+		}
+
+		if (student.RefreshTokenRevokedAt is not null)
+		{
+			return (null, Error.Unauthorized("Auth.Unauthorized", "Refresh token is revoked"));
+		}
+
+		if (student.RefreshTokenExpiresAt is null || student.RefreshTokenExpiresAt <= DateTime.Now)
+		{
+			return (null, Error.Unauthorized("Auth.Unauthorized", "Refresh token is expired"));
+		}
+		
+		bool isRefreshTokenValid = BCrypt.Net.BCrypt.Verify(refreshRequest.RefreshToken, student.RefreshTokenHash);
+
+		if (!isRefreshTokenValid)
+		{
+			return (null, Error.Unauthorized("Auth.Unauthorized", "Invalid refresh token"));
+		}
+		
+		string accessToken = TokenIssue(student);
+		string refreshToken = RefreshTokenIssue();
+		
+		student.RefreshTokenHash = BCrypt.Net.BCrypt.HashPassword(refreshToken);
+		student.RefreshTokenExpiresAt = DateTime.UtcNow.AddDays(7);
+		student.RefreshTokenRevokedAt = null;
+		
+		return (new TokenResponse(accessToken, refreshToken), Error.None);
+	}
+
+	public (Student? Student, Error Error) Logout(LogoutRequest logoutRequest)
+	{
+		Student? student = StudentDataSimulation.StudentsList
+			.FirstOrDefault(x => x.Email == logoutRequest.Email);
+
+		if (student is null)
+		{
+			return (null, Error.NotFound("Auth.NotFound", "Invalid Credentials"));
+		}
+
+		if (student.RefreshTokenRevokedAt is not null)
+		{
+			return (null, Error.Unauthorized("Auth.Unauthorized", "Invalid Credentials"));
+		}
+		
+		if (student.RefreshTokenExpiresAt is null || student.RefreshTokenExpiresAt <= DateTime.Now)
+		{
+			return (null, Error.Unauthorized("Auth.Unauthorized", "Invalid Credentials"));
+		}
+		
+		bool isRefreshTokenValid = BCrypt.Net.BCrypt.Verify(logoutRequest.RefreshToken, student.RefreshTokenHash);
+		
+		if (!isRefreshTokenValid)
+		{
+			return (null, Error.Unauthorized("Auth.Unauthorized", "Invalid Credentials"));
+		}
+		
+		student.RefreshTokenRevokedAt = DateTime.UtcNow;
+		
+		return (student, Error.None);
 	}
 
 	public string TokenIssue(Student student)
@@ -49,9 +127,17 @@ public sealed class AuthService(IConfiguration config) : IAuthService
 			claims: claims,
 			expires: DateTime.Now.AddMinutes(5),
 			signingCredentials: credentials,
-			issuer: config["StudentApi.Issuer"]!,
-			audience: config["StudentApi.Audience"]!);
+			issuer: "StudentApi",
+			audience: "StudentApiUsers");
 
 		return new JwtSecurityTokenHandler().WriteToken(token);
+	}
+
+	public string RefreshTokenIssue()
+	{
+		var bytes = new byte[64];
+		using var rng = RandomNumberGenerator.Create();
+		rng.GetBytes(bytes);
+		return Convert.ToBase64String(bytes);
 	}
 }

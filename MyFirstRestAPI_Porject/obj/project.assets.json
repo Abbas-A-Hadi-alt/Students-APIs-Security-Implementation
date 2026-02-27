@@ -1200,11 +1200,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mraba\\Downloads\\RoadMap\\Mohammed-Abu_Hadhoud\\API\\API-Part2\\0.1-StudentAPIServer-v7\\Student-APIs-Security-Implementation\\MyFirstRestAPI_Porject\\StudentApi.csproj",
+      "projectUniqueName": "C:\\Users\\mraba\\Downloads\\RoadMap\\Mohammed-Abu_Hadhoud\\API\\API-Part2\\0-StudentAPIServer-v7\\Students-APIs-Security-Implementation\\MyFirstRestAPI_Porject\\StudentApi.csproj",
       "projectName": "StudentApi",
-      "projectPath": "C:\\Users\\mraba\\Downloads\\RoadMap\\Mohammed-Abu_Hadhoud\\API\\API-Part2\\0.1-StudentAPIServer-v7\\Student-APIs-Security-Implementation\\MyFirstRestAPI_Porject\\StudentApi.csproj",
+      "projectPath": "C:\\Users\\mraba\\Downloads\\RoadMap\\Mohammed-Abu_Hadhoud\\API\\API-Part2\\0-StudentAPIServer-v7\\Students-APIs-Security-Implementation\\MyFirstRestAPI_Porject\\StudentApi.csproj",
       "packagesPath": "C:\\Users\\mraba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mraba\\Downloads\\RoadMap\\Mohammed-Abu_Hadhoud\\API\\API-Part2\\0.1-StudentAPIServer-v7\\Student-APIs-Security-Implementation\\MyFirstRestAPI_Porject\\obj\\",
+      "outputPath": "C:\\Users\\mraba\\Downloads\\RoadMap\\Mohammed-Abu_Hadhoud\\API\\API-Part2\\0-StudentAPIServer-v7\\Students-APIs-Security-Implementation\\MyFirstRestAPI_Porject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mraba\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1285,7 +1285,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

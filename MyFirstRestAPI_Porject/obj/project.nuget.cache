@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X18wzNAzl48=",
+  "dgSpecHash": "sm3ZPAk90Fg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mraba\\Downloads\\RoadMap\\Mohammed-Abu_Hadhoud\\API\\API-Part2\\0.1-StudentAPIServer-v7\\Student-APIs-Security-Implementation\\MyFirstRestAPI_Porject\\StudentApi.csproj",
+  "projectFilePath": "C:\\Users\\mraba\\Downloads\\RoadMap\\Mohammed-Abu_Hadhoud\\API\\API-Part2\\0-StudentAPIServer-v7\\Students-APIs-Security-Implementation\\MyFirstRestAPI_Porject\\StudentApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mraba\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\mraba\\.nuget\\packages\\azure.extensions.aspnetcore.configuration.secrets\\1.4.0\\azure.extensions.aspnetcore.configuration.secrets.1.4.0.nupkg.sha512",

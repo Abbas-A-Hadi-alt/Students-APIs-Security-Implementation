@@ -1,8 +1,10 @@
 using System.Text;
 using Azure.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using StudentApi.Authorization;
 using StudentApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,7 +16,7 @@ builder.WebHost.UseKestrel(options =>
 	options.AddServerHeader = false;
 });
 
-var keyVaultUrl =  builder.Configuration["KeyVault:Url"];
+var keyVaultUrl = builder.Configuration["KeyVault:Url"];
 if (!string.IsNullOrEmpty(keyVaultUrl))
 {
 	builder.Configuration.AddAzureKeyVault(
@@ -31,15 +33,19 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 			ValidateAudience = true,
 			ValidateLifetime = true,
 			ValidateIssuerSigningKey = true,
-			ValidIssuer = builder.Configuration["StudentApi.Issuer"],
-			ValidAudience = builder.Configuration["StudentApi.Audience"],
+			ValidIssuer = "StudentApi",
+			ValidAudience = "StudentApiUsers",
 			IssuerSigningKey = new SymmetricSecurityKey(
 				Encoding.UTF8.GetBytes(builder.Configuration["JwtSigningKey"]
 					?? throw new KeyNotFoundException("'JWT_SECRET_KEY' key is not found in Environment Variables.")))
 		};
 	});
 
-builder.Services.AddAuthorization();
+builder.Services.AddAuthorization(options =>
+	{
+		options.AddPolicy("StudentOwnerOrAdmin", policy =>
+			policy.Requirements.Add(new StudentOwnerOrAdminRequirement()));
+	});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -87,6 +93,7 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddSingleton<IAuthorizationHandler, StudentOwnerOrAdminHandler>();
 
 var app = builder.Build();
 
