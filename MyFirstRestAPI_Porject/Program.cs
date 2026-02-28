@@ -1,4 +1,5 @@
 using System.Text;
+using System.Threading.RateLimiting;
 using Azure.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -14,6 +15,25 @@ var builder = WebApplication.CreateBuilder(args);
 builder.WebHost.UseKestrel(options =>
 {
 	options.AddServerHeader = false;
+});
+
+builder.Services.AddRateLimiter(options =>
+{
+	options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+
+	options.AddPolicy("AuthLimiter", httpContext =>
+	{
+		var ip = httpContext.Connection.RemoteIpAddress?.ToString() ?? "Unknown";
+
+		return RateLimitPartition.GetFixedWindowLimiter(
+			partitionKey: ip,
+			factory: _ => new FixedWindowRateLimiterOptions()
+			{
+				PermitLimit = 5,
+				Window = TimeSpan.FromMinutes(1),
+				QueueLimit = 0
+			});
+	});
 });
 
 var keyVaultUrl = builder.Configuration["KeyVault:Url"];
@@ -105,6 +125,17 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseRateLimiter();
+app.Use(async (context, next) =>
+{
+	await next();
+
+	if (context.Response.StatusCode == StatusCodes.Status429TooManyRequests)
+	{
+		await context.Response.WriteAsync("Too many login attempts. Try again later.");
+	}
+});
 
 app.UseCors("StudentsApiCorsPolicy");
 

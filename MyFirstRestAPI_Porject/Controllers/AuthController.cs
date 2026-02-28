@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using StudentApi.DTOs.Auth;
 using StudentApi.Model;
 using StudentApi.Services;
@@ -11,6 +12,7 @@ namespace StudentApi.Controllers;
 public sealed class AuthController(IAuthService authService) : ControllerBase
 {
     [HttpPost("login")]
+    [EnableRateLimiting("AuthLimiter")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -27,6 +29,7 @@ public sealed class AuthController(IAuthService authService) : ControllerBase
     }
 
     [HttpPost("refresh")]
+    [EnableRateLimiting("AuthLimiter")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
