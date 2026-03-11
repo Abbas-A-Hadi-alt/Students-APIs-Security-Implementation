@@ -1,8 +1,10 @@
+using System.Runtime.Intrinsics.X86;
+
 namespace StudentApi.Model;
 
 public sealed class Error
 {
-    public static readonly Error None = new(string.Empty, string.Empty, ErrorTypes.Failure);
+    public static readonly Error None = new(string.Empty, string.Empty, ErrorTypes.None);
     
     public static readonly Error NullValue = new(
         "General.Null", 

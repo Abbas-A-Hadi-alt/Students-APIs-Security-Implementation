@@ -1,3 +1,4 @@
+using System.Security.Claims;
 using System.Text;
 using System.Threading.RateLimiting;
 using Azure.Identity;
@@ -6,7 +7,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using StudentApi.Authorization;
-using StudentApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -112,7 +112,6 @@ builder.Services.AddCors(options =>
 	});
 });
 
-builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddSingleton<IAuthorizationHandler, StudentOwnerOrAdminHandler>();
 
 var app = builder.Build();
@@ -141,6 +140,24 @@ app.UseCors("StudentsApiCorsPolicy");
 
 app.UseAuthentication();
 app.UseAuthorization();
+// Global 403 (Forbidden) logging middleware
+app.Use(async (context, next) =>
+{
+	await next();
+
+	if (context.Response.StatusCode == StatusCodes.Status403Forbidden)
+	{
+		var userId = context.User.FindFirstValue(ClaimTypes.NameIdentifier) ?? "anonymous";
+		var ip = context.Connection.RemoteIpAddress?.ToString() ?? "unknown";
+		var path = context.Request.Path.ToString();
+		
+		app.Logger.LogWarning(
+			"Forbidden access, UserId={UserId}, IP={IP}, Path={Path}",
+			userId, 
+			ip, 
+			path);
+	}
+});
 
 app.MapControllers();
 
